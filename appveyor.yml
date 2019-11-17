@@ -50,7 +50,8 @@ install:
     #  - cmd: git clone --recursive  --branch=master https://github.com/lsq/blogsr.git C:\projects\blogsr
 
   - git checkout master
-  - ls -al .
+  - ls -al release\
+    rm release\*.apk
     #- cd ../../
   - df -h
   - wmic LogicalDisk get FreeSpace,Size /value
@@ -60,6 +61,7 @@ build_script:
   - echo %path%
   - ./gradlew assembleDebug
   - ls -al .
+  - ls -al release\
 artifacts:
   - path: \$(APPVEYOR_JOB_ID)
     #- path: src-
