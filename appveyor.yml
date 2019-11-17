@@ -62,6 +62,7 @@ build_script:
   - ./gradlew assembleDebug
   - ls -al .
   - ls -al release\
+  - find . -name "*.apk"
 artifacts:
   - path: \$(APPVEYOR_JOB_ID)
     #- path: src-
