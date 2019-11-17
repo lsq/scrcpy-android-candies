@@ -64,7 +64,10 @@ build_script:
   - ls -al release\
   - find . -name "*.apk"
 artifacts:
-  - path: \$(APPVEYOR_JOB_ID)
+  # - path: \$(APPVEYOR_JOB_ID)
+  - path: app\build\outputs\apk\debug\scrcpy-debug.apk
+  - path: server\build\outputs\apk\debug\server-debug.apk
+
     #- path: src-
 
 on_success:
