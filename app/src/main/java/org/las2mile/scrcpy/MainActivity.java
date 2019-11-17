@@ -92,7 +92,8 @@ public class MainActivity extends Activity implements Scrcpy.ServiceCallbacks, S
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (first_time) {
-            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+//            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
             setContentView(R.layout.activity_main);
             final Button startButton = (Button) findViewById(R.id.button_start);
             AssetManager assetManager = getAssets();
