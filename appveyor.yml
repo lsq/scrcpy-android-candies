@@ -51,7 +51,7 @@ install:
 
   - git checkout master
   - ls -al release\
-  - rm release\*.apk
+  - rm release/*.apk
     #- cd ../../
   - df -h
   - wmic LogicalDisk get FreeSpace,Size /value
